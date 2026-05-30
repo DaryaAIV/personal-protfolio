@@ -321,4 +321,13 @@ form{
     .skills > h3{
         text-align: left;
     }
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-item {
+        width: calc(33.33% - 15px);
+        margin-bottom: 0;
+    }
 }
