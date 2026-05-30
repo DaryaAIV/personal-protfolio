@@ -44,6 +44,7 @@ section{
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 1000;
 }
 .hamburger-bar{
     display: block;
@@ -59,6 +60,32 @@ section{
 .nav-menu{
     position: absolute;
     display: none;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: midnightblue; 
+    padding: 1.5rem 0;
+    z-index: 999;
+}
+.nav-menu.active {
+    display: block;
+}
+.nav-menu .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.nav-menu .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 .intro{
     display: flex;

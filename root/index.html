@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section class="intro">
+        <section class="intro" id="home">
             <div class="intro-text">
                 <h1>Full-Stack Developer</h1>
                 <p>
@@ -43,7 +43,7 @@
                 <img src="https://media.licdn.com/dms/image/v2/D4D03AQExfwWCAb-LTg/profile-displayphoto-scale_400_400/B4DZlXO38ZGgAg-/0/1758105141628?e=1781740800&v=beta&t=woyA_QVktAlWr2GIDG9HZi_v2IRYAO80UnxsPU3uQuY" alt="Professional Photo">
             </div>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about">
             <div class="text">
                 <h2>About Me</h2>
                 <p>
@@ -77,7 +77,7 @@
             </div>
 
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>My Projects</h2>
             <div class="projects-container">
                 
@@ -168,5 +168,22 @@
     <footer class="main-footer">
         <p>&copy; 2026 Darya Abbassov. All rights reserved.</p>
     </footer>
+
+    <script>
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    const navLinks = document.querySelectorAll('.nav-menu .links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
+
 </body>
 </html>
