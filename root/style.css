@@ -272,3 +272,40 @@ form{
     background-color: midnightblue;
     padding: 1rem;
 }
+/* Desktop 901px and above */
+@media (min-width: 901px) {
+    .hamburger-btn {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+    }
+    .nav-menu .links {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .nav-menu .links a {
+        color: black;
+        padding: 0;
+    }
+    .intro{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .intro-text {
+        text-align: left;
+        max-width: 600px;
+    }
+    intro-text > h1 {
+        font-size: 3.5rem;
+    }
+    .profile-img img {
+        max-width: 400px;
+    }
+}
