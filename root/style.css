@@ -37,7 +37,7 @@ section{
     position: relative;
     display: flex;
     justify-content: space-between;
-    border: 3px solid blue;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-btn{
@@ -51,6 +51,10 @@ section{
     height: 3px;
     background-color: darkgray;
     margin: 5px;
+}
+.nav-logo{
+    text-decoration: none;
+    color: blue;
 }
 .nav-menu{
     position: absolute;
@@ -234,4 +238,10 @@ form{
     width: 40px;
     height: 40px;
     object-fit: contain;
+}
+.main-footer{
+    text-align: center;
+    color: #fff;
+    background-color: midnightblue;
+    padding: 1rem;
 }
