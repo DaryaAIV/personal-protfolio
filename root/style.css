@@ -308,4 +308,17 @@ form{
     .profile-img img {
         max-width: 400px;
     }
+    .about-me {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .about-me .text, .skills {
+        flex: 1;
+        text-align: left;
+    }
+    .skills > h3{
+        text-align: left;
+    }
 }
