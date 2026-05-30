@@ -90,7 +90,6 @@ section{
 .intro{
     display: flex;
     flex-direction: column;
-    border: 3px solid blue;
     background-color: rgba(237, 237, 245, 0.7);
     align-items: center;
     
@@ -114,6 +113,10 @@ section{
     border-radius: 8px;
     text-decoration: none;
 }
+.btn-get:hover {
+    background-color: darkblue;
+
+}
 
 .profile-img img{
     max-width: 100%;
@@ -121,7 +124,6 @@ section{
     border-radius: 50%;
 }
 .about-me{
-    border: 3px solid blue;
     display: flex;
     flex-direction: column;
 }
@@ -154,9 +156,7 @@ section{
     height: 100%;
     border-radius: 8px;
 }
-.projects{
-    border:3px solid blue;
-}
+
 .projects > h2{
     text-align: center;
     margin-bottom: 2rem;
@@ -201,9 +201,7 @@ section{
     border-radius: 8px;
     text-decoration: none;
 }
-.contact{
-    border:3px solid blue;
-}
+
 .contact > h2{
     text-align: center;
 }
@@ -213,7 +211,6 @@ section{
     gap: 20px;
 }
 form{
-    border:3px solid blue;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -236,7 +233,6 @@ form{
     height: 50px;
 }
 .contact-info{
-    border:3px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,16 +262,27 @@ form{
     height: 40px;
     object-fit: contain;
 }
+.social-links img:hover {
+    transform: scale(1.15);
+}
 .main-footer{
     text-align: center;
     color: #fff;
     background-color: midnightblue;
     padding: 1rem;
 }
+
+
 /* Desktop 901px and above */
 @media (min-width: 901px) {
     .hamburger-btn {
         display: none;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1.5rem;
     }
     .nav-menu {
         display: block;
@@ -287,6 +294,7 @@ form{
     .nav-menu .links {
         flex-direction: row;
         gap: 30px;
+        margin: 0;
     }
     .nav-menu .links a {
         color: black;
@@ -302,7 +310,7 @@ form{
         text-align: left;
         max-width: 600px;
     }
-    intro-text > h1 {
+    .intro-text > h1 {
         font-size: 3.5rem;
     }
     .profile-img img {
@@ -329,5 +337,46 @@ form{
     .project-item {
         width: calc(33.33% - 15px);
         margin-bottom: 0;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    form{
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn-submit {
+        align-self: flex-start;
+        padding: 0 35px;
+        width: auto;
+        height: 50px;
+        cursor: pointer;
+    }
+    .contact-info{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .contact-detail{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+    .social-links {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;
+        margin-top: 10px;
     }
 }
