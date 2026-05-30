@@ -26,6 +26,7 @@ section{
 .skills-container,
 .projects,
 .projects-container,
+.contact,
 .contact-container{
     width: 100%;
     max-width: 1200px;
@@ -168,4 +169,38 @@ section{
     padding: 10px 10px;
     border-radius: 8px;
     text-decoration: none;
+}
+.contact{
+    border:3px solid blue;
+}
+.contact > h2{
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form{
+    border:3px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 25px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group input, .form-group textarea{
+   padding: 20px;
+   border-radius: 8px;
+   border: 1px solid rgb(197, 197, 197);
+}
+.btn-submit{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
 }
